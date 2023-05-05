@@ -1,0 +1,144 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #dfb10e;
+  --light-yellow: #dfb20e75;
+  --white: #ffffff;
+  --dark-gray: #545454;
+  --mid-gray: #9c9c9c;
+  --light-gray: #d9d9d9;
+  --main-font: "Garet";
+  --main-font-bold: "Garet Bold";
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: #0d4235;
+}
+
+img {
+  max-width: 30rem;
+}
+
+section {
+  padding: 2.5rem 0;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  margin: auto;
+  max-width: 82rem;
+  padding: 0 1.5rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.heading span {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+.heading h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+}
+
+/*---------------------------------------------------- 
+Main Area
+----------------------------------------------------*/
+main {
+  padding: 4rem 0;
+}
+main h1 {
+  text-align: center;
+}
+main .heading span {
+  font-size: 2rem;
+  color: #ff6b5e;
+  font-weight: inherit;
+}
+main .wrapper {
+  margin-top: 3rem;
+  display: grid;
+}
+main .left-content .images {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .left-content .images img {
+  max-width: 22rem;
+  width: 100%;
+}
+main .left-content .images .img-1 {
+  position: relative;
+}
+main .left-content .images .img-2 {
+  margin-top: -5rem;
+  left: 0;
+  bottom: 0;
+}
+main .right-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .right-content h3 {
+  font-style: italic;
+}
+main .right-content span {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 640px) {
+  main {
+    padding: 4rem 2rem;
+  }
+  main .wrapper {
+    margin-top: 3rem;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  main .left-content {
+    grid-column: span 3/span 3;
+  }
+  main .right-content {
+    grid-column: span 4/span 4;
+  }
+}/*# sourceMappingURL=style.css.map */
